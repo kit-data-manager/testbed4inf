@@ -31,3 +31,15 @@ services:
     environment:
       - DATABASE_PORT_5432_TCP_ADDR=database
       - RABBITMQ_PORT_4369_TCP_ADDR=messagebroker 
+
+  pitservice:
+    build: ./pit-service
+    container_name: pitservice
+    ports:
+      - "8091:8080"
+    depends_on:
+      - database
+      - messagebroker
+    environment:
+      - DATABASE_PORT_5432_TCP_ADDR=database
+      - RABBITMQ_PORT_4369_TCP_ADDR=messagebroker 
