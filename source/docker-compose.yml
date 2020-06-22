@@ -1,34 +1,33 @@
-version: '2.1'
+version: '3'
 services:
-   rabbitmq:
-      image: rabbitmq:3
-      container_name: rabbitmq
+  messagebroker:
+    image: rabbitmq:3
+    container_name: messagebroker
 
-   database:
-      build: ./postgres
-      container_name: database
-      environment:
-         - PGPASSWORD=docker
-         - POSTGRES_USER=docker
-         - POSTGRES_PASSWORD=docker
-         - POSTGRES_DB=kitdm20
-      healthcheck:
-        test: ["CMD-SHELL", "pg_isready -U docker -d kitdm20"]
-        interval: 10s
-        timeout: 5s
-        retries: 15
-   tomcat:
-      build: ./tomcat
-      container_name: tomcat
-      ports: 
-        - "8090:8080"
-      volumes:
-        - ./data:/kitdm20/data/
-      depends_on:
-        database:
-          condition: service_healthy
-        rabbitmq:
-          condition: service_started  # TODO find working healthcheck
-      environment:
-        - DATABASE_PORT_5432_TCP_ADDR=database
-        - RABBITMQ_PORT_4369_TCP_ADDR=rabbitmq 
+  database:
+    build: ./postgres
+    container_name: database
+    environment:
+        - PGPASSWORD=docker
+        - POSTGRES_USER=docker
+        - POSTGRES_PASSWORD=docker
+        - POSTGRES_DB=kitdm20
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U docker -d kitdm20"]
+      interval: 10s
+      timeout: 5s
+      retries: 15
+  
+  baserepo:
+    build: ./baserepo
+    container_name: baserepo
+    ports: 
+      - "8090:8080"
+    volumes:
+      - ./data:/kitdm20/data/
+    depends_on:
+      - database
+      - messagebroker
+    environment:
+      - DATABASE_PORT_5432_TCP_ADDR=database
+      - RABBITMQ_PORT_4369_TCP_ADDR=messagebroker 
