@@ -8,7 +8,7 @@ cd base-repo
 
 echo "Building submodules and project from source."
 # TODO test and asciidoctor fail, so they are excluded. Tracking issue: https://git.scc.kit.edu/kitdatamanager/2.0/docker-kitdm-2.0/-/issues/1
-./gradlew -Pclean-release build -x test -x asciidoctor --stacktrace
+./gradlew -Pclean-release build --stacktrace
 
 echo "Copying service and configuration files to release folder."
 mkdir release
