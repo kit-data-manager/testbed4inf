@@ -42,4 +42,16 @@ services:
       - messagebroker
     environment:
       - DATABASE_PORT_5432_TCP_ADDR=database
-      - RABBITMQ_PORT_4369_TCP_ADDR=messagebroker 
+      - RABBITMQ_PORT_4369_TCP_ADDR=messagebroker
+
+  collectionapi:
+    build: ./collection-api
+    container_name: collectionapi
+    ports:
+      - "8092:8080"
+    depends_on:
+      - database
+      - messagebroker
+    environment:
+      - DATABASE_PORT_5432_TCP_ADDR=database
+      - RABBITMQ_PORT_4369_TCP_ADDR=messagebroker
