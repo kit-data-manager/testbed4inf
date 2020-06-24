@@ -1,0 +1,4 @@
+# temporary and automatically created directories
+tmp/*
+data/*
+bin/*
