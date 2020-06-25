@@ -14,7 +14,7 @@ function log() {
 function compile() {
     log "compile: $@"
     exec cd $1
-    exec ./gradlew -Pclean-release build --debug
+    exec ./gradlew -Pclean-release build --warning-mode all
     # take the JAR to the BINARY_DIR
     exec cp $(ls build/libs/*.jar) $SCRIPT_DIR/$BINARY_DIR
     # configs are used from this repository.
