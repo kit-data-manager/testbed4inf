@@ -6,7 +6,7 @@ set -e
 # the service name has to fit the db name and db user name.
 # example: for service in pit metastore collectionapi; do ... done
 echo "User and DB used to create new users and dbs: user=$POSTGRES_USER, db=$POSTGRES_DB"
-for service in pit collection;
+for service in pit collection metastore2;
 do
     echo "Will create user and db named $service."
     psql -v ON_ERROR_STOP=1 --username "$POSTGRES_USER" --dbname "$POSTGRES_DB" <<-EOSQL
