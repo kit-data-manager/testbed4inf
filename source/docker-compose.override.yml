@@ -1,7 +1,12 @@
 version: '3'
 services:
     pitservice:
-        build: ./pit-service
+        build:
+            context: .
+            dockerfile: ./Dockerfile_jar
+            args:
+              - SERVICE_FOLDER=pit-service
+              - BINARY_NAME=pit-service
         container_name: pitservice
         ports:
         - "8091:8080"

@@ -12,6 +12,10 @@ Most services originating from KIT Data Manager are compiled using the same tech
     - `SERVICE_FOLDER` stores the name of the repository folder name, which is the folder name in the url without the `.git` suffix.
     - `BINARY_NAME` is the name of the JAR-file without the `.jar` suffix.
 
-There are services that do not yet have public source repositories and therefore can not be set up as easily as the ones described above. For those, there is a workaround. The `compileClosedServices.bash` script will compile the projects directly on your computer (in `tmp` subfolder) and store the result in `./bin/`. This requires ssh access to the repositories, though.
+There are services that do not yet have public source repositories and therefore can not be set up as easily as the ones described above. For those, there is a workaround. The `compileClosedServices.bash` script will compile the projects directly on your computer (in `tmp` subfolder) and store the result in `./bin/`. This requires ssh access to the repositories, though. Also note: The docker-compose definition of such services are not in the `docker.compose.yml` but in the `docker-compose.override.yml` to distiguish them easier. Also, those services use the `Dockerfile_jar`instead of the default Dockerfile.
 
 After compiling, you can use docker-compose as for all the other services. The technical difference here is that another dockerfile will be used to create them, which expect the binary (or byte-code) in the `bin/` folder. So ake sure to run the `compileClosedServices.bash` script successfully before using docker-compose.
+
+### Databases
+
+A special role plays the database service, which has it's own dockerfile and a inititlization script within its folder to add new databases. If you need to add another postgres database, you can do this easily by slightly modifying the script. This also means that in this current setup, all postgres databases reside in the same container.
