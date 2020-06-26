@@ -17,14 +17,14 @@ services:
             - DATABASE_PORT_5432_TCP_ADDR=database
             - RABBITMQ_PORT_4369_TCP_ADDR=messagebroker
     
-    pitservice:
+    metastore2:
         build:
             context: .
             dockerfile: ./Dockerfile_jar
             args:
                 - SERVICE_FOLDER=metastore2
                 - BINARY_NAME=metastore2
-        container_name: pitservice
+        container_name: metastore2
         ports:
             - "8093:8080"
         depends_on:
