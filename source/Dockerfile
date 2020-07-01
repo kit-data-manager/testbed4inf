@@ -1,5 +1,5 @@
 FROM openjdk:11-buster
-MAINTAINER webmaster@datamanager.kit.edu
+LABEL maintainer="pfeil@.kit.edu"
 
 ARG SERVICE_FOLDER
 ARG BINARY_NAME
