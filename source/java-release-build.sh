@@ -2,18 +2,22 @@
 set -e
 
 function exec() {
+    # print and then execute the given command
+    # example usage: exec git pull origin master
     echo "BUILD-SCRIPT COMMAND:" $@
     $@
     return $?
 }
 
 function log() {
+    # print a log message
+    # example usage: log "Building Application"
     echo "BUILD-SCRIPT LOG:" $@
 }
 
 if test $# -lt 2
 then
-    log "No arguments supplied, expected two. Call was:" $@
+    log "Expected two arguments, got less. Call was:" $@
     exit 1
 fi
 
