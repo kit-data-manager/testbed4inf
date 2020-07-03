@@ -2,13 +2,13 @@
 set -e
 
 function exec() {
-    echo "BUILD-SCRIPT COMMAND:" $@
+    echo "RUN-SCRIPT COMMAND:" $@
     $@
     return $?
 }
 
 function log() {
-    echo "BUILD-SCRIPT LOG:" $@
+    echo "RUN-SCRIPT LOG:" $@
 }
 
 if test $# -lt 2
