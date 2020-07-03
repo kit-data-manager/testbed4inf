@@ -14,9 +14,9 @@ function log() {
 function compile() {
     log "compile: $@"
     exec cd $1
-    exec ./gradlew -Pclean-release build --warning-mode all
+    exec $2
     # take the JAR to the BINARY_DIR
-    exec cp $(ls build/libs/*.jar) $SCRIPT_DIR/$BINARY_DIR
+    exec cp $(ls build/libs/*.jar) $SCRIPT_DIR/$BINARY_DIR/$service.jar
     # configs are used from this repository.
 }
 
@@ -31,10 +31,21 @@ if test ! -d $REPO_DIR; then exec mkdir $REPO_DIR; fi
 
 for service in pit-service metastore2
 do
+    # defaults for most applications:
+    GIT_URL=git@git.scc.kit.edu:kitdatamanager/2.0/$service.git
+    COMPILE_CMD="./gradlew -Pclean-release build --warning-mode all"
+
+    # Workaround for metastore2 because it is WIP.
+    if test $service = metastore2;
+    then
+        GIT_URL="git@git.scc.kit.edu:td5416/metastore2.git --branch=migrateApiDoc"
+        COMPILE_CMD="./gradlew -Pclean-release build -x test -x asciidoctor --stacktrace"
+    fi
+
     exec cd $SCRIPT_DIR/$REPO_DIR
     if test ! -d $service;
     then
-        exec git clone --recursive git@git.scc.kit.edu:kitdatamanager/2.0/$service.git
+        exec git clone --recursive $GIT_URL
     fi
-    compile $service
+    compile $service "$COMPILE_CMD"
 done
