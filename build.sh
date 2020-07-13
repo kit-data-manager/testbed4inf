@@ -9,7 +9,7 @@
 
 SSH_KEY_FILE=~/.ssh/id_rsa
 
-docker-compose build --build-arg SSH_PRIVATE_KEY="$(cat $SSH_KEY_FILE)" pit-service
+docker-compose build --build-arg SSH_PRIVATE_KEY="$(cat $SSH_KEY_FILE)" fairris #pit-service
 
 # Delete containers with credentials.
 docker rmi -f $(docker images -q --filter label=stage=build-contains-credentials)

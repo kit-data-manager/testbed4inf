@@ -6,9 +6,16 @@ services:
       dockerfile: ./pit-service/Dockerfile
       args:
         - SSH_PRIVATE_KEY #=${SSH_PRIVATE_KEY}
-    container_name: baserepo
+    container_name: pit-service
     ports: 
       - "8090:8080"
-    volumes:
-      - ./data:/kitdm20/data/
-
+  
+  fairris:
+    build:
+      context: . # without this context, the dockerfile can not access the java-release-run.sh and similar files.
+      dockerfile: ./fairris/Dockerfile
+      args:
+        - SSH_PRIVATE_KEY #=${SSH_PRIVATE_KEY}
+    container_name: fairris
+    ports: 
+      - "8080:80"
