@@ -1,0 +1,14 @@
+version: '3'
+services:
+  pit-service:
+    build:
+      context: . # without this context, the dockerfile can not access the java-release-run.sh and similar files.
+      dockerfile: ./pit-service/Dockerfile
+      args:
+        - SSH_PRIVATE_KEY #=${SSH_PRIVATE_KEY}
+    container_name: baserepo
+    ports: 
+      - "8090:8080"
+    volumes:
+      - ./data:/kitdm20/data/
+
