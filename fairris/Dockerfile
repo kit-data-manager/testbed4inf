@@ -27,7 +27,7 @@ RUN echo "${SSH_PRIVATE_KEY}" > /root/.ssh/id_rsa && \
 RUN echo "NOTE: Compiling will take a while." && \
     mkdir -p /repo/ && \
     cd repo && \
-    git clone --recursive git@git.scc.kit.edu:on3151/fairris.git --branch=router && \
+    git clone --recursive git@git.scc.kit.edu:on3151/fairris.git --branch=master && \
     cd fairris && \
     bash build.sh
 
