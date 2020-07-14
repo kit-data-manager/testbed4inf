@@ -6,7 +6,7 @@ LABEL maintainer="pfeil@.kit.edu"
 LABEL stage=build-env
 RUN apt-get update && \
     apt-get upgrade --assume-yes && \
-    apt-get install --assume-yes git && \
+    apt-get install --no-install-recommends --assume-yes git && \
     mkdir -p /var/repository && \
     mkdir -p /kitdm20/
 # prepare the environment for potential credentials
@@ -25,8 +25,8 @@ ARG SSH_PRIVATE_KEY
 RUN echo "${SSH_PRIVATE_KEY}" > /root/.ssh/id_rsa && \
     chmod 600 /root/.ssh/id_rsa && \
     eval $(ssh-agent -s) && \
-    ssh-add ~/.ssh/id_rsa
-RUN ssh-keyscan -t rsa git.scc.kit.edu >> /root/.ssh/known_hosts
+    ssh-add ~/.ssh/id_rsa && \
+    ssh-keyscan -t rsa git.scc.kit.edu >> /root/.ssh/known_hosts
 # Run the compilation at image cration time, this is important.
 # Use ssh for private repos (the key makes this easy), but https for public ones.
 RUN cd /kitdm20/ && \
@@ -47,6 +47,5 @@ RUN mkdir -p /kitdm20/config
 COPY java-release-run.sh /kitdm20/
 COPY --from=build-pit /kitdm20/pit-service.jar /kitdm20/
 COPY pit-service/conf/application.properties /kitdm20/config/application.properties
-
 EXPOSE 8080
 CMD bash /kitdm20/java-release-run.sh pit-service.jar
