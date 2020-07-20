@@ -23,4 +23,4 @@ SCRIPT_DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" >/dev/null 2>&1 && pwd )"
 log BINARY_NAME: $BINARY_NAME
 
 exec cd $SCRIPT_DIR
-exec java -cp ".:./config:./$BINARY_NAME.jar" -Dloader.path=file://`pwd`/$BINARY_NAME.jar,./lib/,. -jar $BINARY_NAME
+exec java -cp ".:./config:./$BINARY_NAME" -Dloader.path=file://`pwd`/$BINARY_NAME,./lib/,. -jar $BINARY_NAME
