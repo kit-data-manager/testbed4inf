@@ -9,6 +9,9 @@ services:
     container_name: pit-service
     ports: 
       - "8090:8080"
+    depends_on:
+      - database
+      - messagebroker
   
   fairris:
     build:
@@ -19,3 +22,21 @@ services:
     container_name: fairris
     ports: 
       - "8080:80"
+
+  messagebroker:
+    image: rabbitmq:3
+    container_name: messagebroker
+
+  database:
+    build: ./postgres
+    container_name: database
+    environment:
+        - PGPASSWORD=docker
+        - POSTGRES_USER=docker
+        - POSTGRES_PASSWORD=docker
+        - POSTGRES_DB=kitdm20
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U docker -d kitdm20"]
+      interval: 10s
+      timeout: 5s
+      retries: 15
