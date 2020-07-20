@@ -30,7 +30,7 @@ RUN echo "${SSH_PRIVATE_KEY}" > /root/.ssh/id_rsa && \
 # Run the compilation at image cration time, this is important.
 # Use ssh for private repos (the key makes this easy), but https for public ones.
 RUN cd /kitdm20/ && \
-    git clone --recursive -v git@git.scc.kit.edu:on3151/pit-service.git service && \
+    git clone -v git@git.scc.kit.edu:on3151/pit-service.git service && \
     cd service && \
     ./gradlew -Pclean-release build --stacktrace && \
     cp build/libs/pit-service.jar ../
