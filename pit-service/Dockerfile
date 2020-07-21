@@ -2,7 +2,7 @@
 # Since the building images should be deleted immediately due to their credentials,
 # having a separate, clean base environment will speed up your image creations.
 FROM openjdk:11-buster AS build-env-java
-LABEL maintainer="pfeil@.kit.edu"
+LABEL maintainer="pfeil@kit.edu"
 LABEL stage=build-env
 RUN apt-get update && \
     apt-get upgrade --assume-yes && \
@@ -19,7 +19,7 @@ RUN mkdir /root/.ssh/ && \
 # This is the building environment and contains your ssh key!
 # The label shall remember you and help to remove all images with credentials.
 FROM build-env-java as build-pit
-LABEL maintainer="pfeil@.kit.edu"
+LABEL maintainer="pfeil@kit.edu"
 LABEL stage=build-contains-credentials
 ARG SSH_PRIVATE_KEY
 RUN echo "${SSH_PRIVATE_KEY}" > /root/.ssh/id_rsa && \
@@ -41,7 +41,7 @@ RUN cd /kitdm20/ && \
 # Only a run script, the binary and the configuration file will be there.
 # Keeps image size small, and the image may be released to the public.
 FROM openjdk:11-buster as run-pit
-LABEL maintainer="pfeil@.kit.edu"
+LABEL maintainer="pfeil@kit.edu"
 LABEL stage=run
 RUN mkdir -p /kitdm20/config
 COPY java-release-run.sh /kitdm20/

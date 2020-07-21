@@ -19,5 +19,5 @@ docker-compose build --build-arg SSH_PRIVATE_KEY="$(cat $SSH_KEY_FILE)" $@
 docker rmi -f $(docker images -q --filter label=stage=build-contains-credentials)
 
 echo "Finished building images."
-echo "Use the following command to start the just build images:"
+echo "Use the following command to start only the just built images:"
 echo "docker-compose up $@"

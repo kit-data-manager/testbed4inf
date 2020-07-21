@@ -1,5 +1,5 @@
 FROM rust:1-buster AS rust-base
-LABEL maintainer="pfeil@.kit.edu"
+LABEL maintainer="pfeil@kit.edu"
 LABEL stage=build-env
 RUN apt-get update && \
     apt-get upgrade --assume-yes && \
@@ -15,7 +15,7 @@ RUN mkdir /root/.ssh/ && \
 
 
 FROM rust-base as fairris-build
-LABEL maintainer="pfeil@.kit.edu"
+LABEL maintainer="pfeil@kit.edu"
 LABEL stage=build-contains-credentials
 ARG SSH_PRIVATE_KEY
 RUN echo "${SSH_PRIVATE_KEY}" > /root/.ssh/id_rsa && \
@@ -34,6 +34,6 @@ RUN echo "NOTE: Compiling will take a while." && \
 
 # clean image
 FROM nginx:stable-alpine AS fairris
-LABEL maintainer="pfeil@.kit.edu"
+LABEL maintainer="pfeil@kit.edu"
 LABEL stage=run
 COPY --from=fairris-build /repo/fairris/static/* /usr/share/nginx/html/
