@@ -2,3 +2,6 @@
 tmp
 data
 bin
+
+# OS specific things
+.DS_Store
