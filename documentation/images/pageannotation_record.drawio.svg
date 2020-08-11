@@ -1,283 +1,319 @@
-<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" width="700px" height="514px" viewBox="-0.5 -0.5 700 514" content="&lt;mxfile host=&quot;d8038559-c9a5-4d9f-8443-bd51a80ddee5&quot; modified=&quot;2020-07-22T16:28:22.709Z&quot; agent=&quot;5.0 (Macintosh; Intel Mac OS X 10_15_5) AppleWebKit/537.36 (KHTML, like Gecko) Code/1.47.2 Chrome/78.0.3904.130 Electron/7.3.2 Safari/537.36&quot; etag=&quot;YLNVkfMZ9IPwP1FnaRLc&quot; version=&quot;13.1.3&quot;&gt;&lt;diagram id=&quot;6hGFLwfOUW9BJ-s0fimq&quot; name=&quot;Variante1&quot;&gt;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&lt;/diagram&gt;&lt;/mxfile&gt;" style="background-color: rgb(255, 255, 255);">
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" width="731px" height="501px" viewBox="-0.5 -0.5 731 501" content="&lt;mxfile host=&quot;2f85d485-9e5a-409a-9327-a55ad344fd72&quot; modified=&quot;2020-08-11T12:30:34.098Z&quot; agent=&quot;5.0 (Macintosh; Intel Mac OS X 10_15_6) AppleWebKit/537.36 (KHTML, like Gecko) Code/1.47.3 Chrome/78.0.3904.130 Electron/7.3.2 Safari/537.36&quot; etag=&quot;e94GxkwAUC6CK5YLqpKg&quot; version=&quot;13.1.3&quot;&gt;&lt;diagram id=&quot;6hGFLwfOUW9BJ-s0fimq&quot; name=&quot;Variante1&quot;&gt;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&lt;/diagram&gt;&lt;/mxfile&gt;">
     <defs>
-        <clipPath id="mx-clip-33-151-292-26-0">
-            <rect x="33" y="151" width="292" height="26"/>
+        <clipPath id="mx-clip-43-80-292-26-0">
+            <rect x="43" y="80" width="292" height="26"/>
         </clipPath>
-        <clipPath id="mx-clip-33-177-292-26-0">
-            <rect x="33" y="177" width="292" height="26"/>
+        <clipPath id="mx-clip-43-106-292-26-0">
+            <rect x="43" y="106" width="292" height="26"/>
         </clipPath>
-        <clipPath id="mx-clip-33-203-292-26-0">
-            <rect x="33" y="203" width="292" height="26"/>
+        <clipPath id="mx-clip-43-132-292-26-0">
+            <rect x="43" y="132" width="292" height="26"/>
         </clipPath>
-        <clipPath id="mx-clip-33-229-292-26-0">
-            <rect x="33" y="229" width="292" height="26"/>
+        <clipPath id="mx-clip-43-158-292-26-0">
+            <rect x="43" y="158" width="292" height="26"/>
         </clipPath>
-        <clipPath id="mx-clip-33-255-292-26-0">
-            <rect x="33" y="255" width="292" height="26"/>
+        <clipPath id="mx-clip-43-184-292-26-0">
+            <rect x="43" y="184" width="292" height="26"/>
         </clipPath>
-        <clipPath id="mx-clip-33-281-292-26-0">
-            <rect x="33" y="281" width="292" height="26"/>
+        <clipPath id="mx-clip-43-210-292-26-0">
+            <rect x="43" y="210" width="292" height="26"/>
         </clipPath>
-        <clipPath id="mx-clip-33-307-292-26-0">
-            <rect x="33" y="307" width="292" height="26"/>
+        <clipPath id="mx-clip-43-236-292-26-0">
+            <rect x="43" y="236" width="292" height="26"/>
         </clipPath>
-        <clipPath id="mx-clip-33-333-292-26-0">
-            <rect x="33" y="333" width="292" height="26"/>
+        <clipPath id="mx-clip-43-262-292-26-0">
+            <rect x="43" y="262" width="292" height="26"/>
         </clipPath>
-        <clipPath id="mx-clip-33-359-292-26-0">
-            <rect x="33" y="359" width="292" height="26"/>
+        <clipPath id="mx-clip-43-288-292-26-0">
+            <rect x="43" y="288" width="292" height="26"/>
         </clipPath>
-        <clipPath id="mx-clip-33-385-292-26-0">
-            <rect x="33" y="385" width="292" height="26"/>
+        <clipPath id="mx-clip-43-314-292-26-0">
+            <rect x="43" y="314" width="292" height="26"/>
         </clipPath>
-        <clipPath id="mx-clip-33-411-292-26-0">
-            <rect x="33" y="411" width="292" height="26"/>
+        <clipPath id="mx-clip-43-340-292-26-0">
+            <rect x="43" y="340" width="292" height="26"/>
         </clipPath>
-        <clipPath id="mx-clip-33-437-292-26-0">
-            <rect x="33" y="437" width="292" height="26"/>
+        <clipPath id="mx-clip-43-366-292-26-0">
+            <rect x="43" y="366" width="292" height="26"/>
         </clipPath>
-        <clipPath id="mx-clip-33-463-292-26-0">
-            <rect x="33" y="463" width="292" height="26"/>
+        <clipPath id="mx-clip-43-392-292-26-0">
+            <rect x="43" y="392" width="292" height="26"/>
         </clipPath>
-        <clipPath id="mx-clip-33-489-292-26-0">
-            <rect x="33" y="489" width="292" height="26"/>
+        <clipPath id="mx-clip-43-418-292-26-0">
+            <rect x="43" y="418" width="292" height="26"/>
         </clipPath>
-        <clipPath id="mx-clip-433-255-262-26-0">
-            <rect x="433" y="255" width="262" height="26"/>
+        <clipPath id="mx-clip-43-444-292-26-0">
+            <rect x="43" y="444" width="292" height="26"/>
         </clipPath>
-        <clipPath id="mx-clip-433-281-262-26-0">
-            <rect x="433" y="281" width="262" height="26"/>
+        <clipPath id="mx-clip-451-176-254-26-0">
+            <rect x="451" y="176" width="254" height="26"/>
         </clipPath>
-        <clipPath id="mx-clip-433-307-262-26-0">
-            <rect x="433" y="307" width="262" height="26"/>
+        <clipPath id="mx-clip-451-202-254-26-0">
+            <rect x="451" y="202" width="254" height="26"/>
+        </clipPath>
+        <clipPath id="mx-clip-451-228-254-26-0">
+            <rect x="451" y="228" width="254" height="26"/>
+        </clipPath>
+        <clipPath id="mx-clip-451-332-255-26-0">
+            <rect x="451" y="332" width="255" height="26"/>
+        </clipPath>
+        <clipPath id="mx-clip-451-358-255-26-0">
+            <rect x="451" y="358" width="255" height="26"/>
+        </clipPath>
+        <clipPath id="mx-clip-451-384-255-26-0">
+            <rect x="451" y="384" width="255" height="26"/>
         </clipPath>
     </defs>
     <g>
-        <path d="M 429 60 L 619 60 L 619 200 Q 571.5 182 524 200 Q 476.5 218 429 200 L 429 70 Z" fill="#ffffff" stroke="#171717" stroke-miterlimit="10" pointer-events="all"/>
+        <rect x="0" y="0" width="730" height="500" fill="#ffffff" stroke="#000000" pointer-events="all"/>
+        <path d="M 447 60 L 710 60 L 710 130.55 Q 644.25 130.55 578.5 130.55 Q 512.75 130.55 447 130.55 L 447 60 Z" fill="#ffffff" stroke="#000000" stroke-miterlimit="10" pointer-events="all"/>
         <g transform="translate(-0.5 -0.5)">
             <switch>
                 <foreignObject style="overflow: visible; text-align: left;" pointer-events="none" width="100%" height="100%" requiredFeatures="http://www.w3.org/TR/SVG11/feature#Extensibility">
-                    <div xmlns="http://www.w3.org/1999/xhtml" style="display: flex; align-items: unsafe center; justify-content: unsafe center; width: 168px; height: 1px; padding-top: 128px; margin-left: 440px;">
+                    <div xmlns="http://www.w3.org/1999/xhtml" style="display: flex; align-items: unsafe center; justify-content: unsafe center; width: 241px; height: 1px; padding-top: 98px; margin-left: 458px;">
                         <div style="box-sizing: border-box; font-size: 0; text-align: center; ">
                             <div style="display: inline-block; font-size: 12px; font-family: Helvetica; color: #000000; line-height: 1.2; pointer-events: all; white-space: normal; word-wrap: normal; ">
                                 <blockquote style="margin: 0 0 0 40px ; border: none ; padding: 0px"></blockquote>
                                 <div style="text-align: left">
                                     <span>
-                                        Alternative:
+                                        Alternative: 
                                     </span>
-                                </div>
-                                <span>
-                                    <div style="text-align: left">
-                                        <span>
-                                            Simple PID, pointing to type that looks like this:
-                                        </span>
-                                    </div>
-                                </span>
-                                <div style="text-align: left">
-                                    <br/>
-                                </div>
-                                <span>
-                                    <div style="text-align: left">
-                                        <span>
-                                            {
-                                        </span>
-                                    </div>
-                                </span>
-                                <span>
-                                    <div style="text-align: left">
-                                        <span>
-                                                fileformat: tiff,
-                                        </span>
-                                    </div>
-                                </span>
-                                <span>
-                                    <div style="text-align: left">
-                                        <span>
-                                                formatversion: 4
-                                        </span>
-                                    </div>
-                                </span>
-                                <div style="text-align: left">
                                     <span>
-                                        }
+                                        Simple PID, pointing to type that looks like this:
                                     </span>
                                 </div>
+                                <span>
+                                    <div style="text-align: left">
+                                        <span>
+                                            { 
+                                        </span>
+                                        <span>
+                                            fileformat: tiff, 
+                                        </span>
+                                        <span>
+                                            formatversion: 4 
+                                        </span>
+                                        <span>
+                                            }
+                                        </span>
+                                    </div>
+                                </span>
                                 <p></p>
                             </div>
                         </div>
                     </div>
                 </foreignObject>
-                <text x="524" y="131" fill="#000000" font-family="Helvetica" font-size="12px" text-anchor="middle">
-                    Alternative:Simple PID, poin...
+                <text x="579" y="101" fill="#000000" font-family="Helvetica" font-size="12px" text-anchor="middle">
+                    Alternative: Simple PID, pointing to typ...
                 </text>
             </switch>
         </g>
-        <path d="M 329 185 L 379 185 L 379 135 L 420.76 135" fill="none" stroke="#171717" stroke-width="2" stroke-miterlimit="10" stroke-dasharray="2 2" pointer-events="stroke"/>
-        <path d="M 426.76 135 L 418.76 139 L 420.76 135 L 418.76 131 Z" fill="#171717" stroke="#171717" stroke-width="2" stroke-miterlimit="10" pointer-events="all"/>
-        <path d="M 314 90 L 314 110 L 221.6 110 L 221.6 164.1" fill="none" stroke="#171717" stroke-width="2" stroke-miterlimit="10" stroke-dasharray="2 2" pointer-events="stroke"/>
-        <path d="M 221.6 170.1 L 217.6 162.1 L 221.6 164.1 L 225.6 162.1 Z" fill="#171717" stroke="#171717" stroke-width="2" stroke-miterlimit="10" pointer-events="all"/>
-        <rect x="269" y="70" width="90" height="20" fill="#ffffff" stroke="#171717" pointer-events="all"/>
+        <path d="M 339 114 L 393 114 L 393 95.3 L 447 95.28" fill="none" stroke="#000000" stroke-miterlimit="10" pointer-events="stroke"/>
+        <path d="M 339 166 L 393 166 L 393 158 L 439.81 158" fill="none" stroke="#000000" stroke-width="2" stroke-miterlimit="10" stroke-dasharray="2 2" pointer-events="stroke"/>
+        <path d="M 445.81 158 L 437.81 162 L 439.81 158 L 437.81 154 Z" fill="#000000" stroke="#000000" stroke-width="2" stroke-miterlimit="10" pointer-events="all"/>
+        <rect x="447.5" y="261.32" width="262" height="24.32" fill="#ffffff" stroke="#000000" pointer-events="all"/>
         <g transform="translate(-0.5 -0.5)">
             <switch>
                 <foreignObject style="overflow: visible; text-align: left;" pointer-events="none" width="100%" height="100%" requiredFeatures="http://www.w3.org/TR/SVG11/feature#Extensibility">
-                    <div xmlns="http://www.w3.org/1999/xhtml" style="display: flex; align-items: unsafe center; justify-content: unsafe center; width: 88px; height: 1px; padding-top: 80px; margin-left: 270px;">
+                    <div xmlns="http://www.w3.org/1999/xhtml" style="display: flex; align-items: unsafe center; justify-content: unsafe center; width: 260px; height: 1px; padding-top: 273px; margin-left: 449px;">
                         <div style="box-sizing: border-box; font-size: 0; text-align: center; ">
                             <div style="display: inline-block; font-size: 12px; font-family: Helvetica; color: #000000; line-height: 1.2; pointer-events: all; white-space: normal; word-wrap: normal; ">
-                                Nicht unteilbar
+                                <span style="text-align: left">
+                                    <font color="#f2f2f2">
+                                        { "pid-checksum" : {"sha256sum": "value"} }
+                                    </font>
+                                </span>
                             </div>
                         </div>
                     </div>
                 </foreignObject>
-                <text x="314" y="84" fill="#000000" font-family="Helvetica" font-size="12px" text-anchor="middle">
-                    Nicht unteilbar
+                <text x="579" y="277" fill="#000000" font-family="Helvetica" font-size="12px" text-anchor="middle">
+                    { "pid-checksum" : {"sha256sum": "value"} }
                 </text>
             </switch>
         </g>
-        <path d="M 329 237 L 421.84 237" fill="none" stroke="#171717" stroke-width="2" stroke-miterlimit="10" stroke-dasharray="2 2" pointer-events="stroke"/>
-        <path d="M 427.84 237 L 419.84 241 L 421.84 237 L 419.84 233 Z" fill="#171717" stroke="#171717" stroke-width="2" stroke-miterlimit="10" pointer-events="all"/>
-        <rect x="84" y="0" width="560" height="20" fill="#ffffff" stroke="#000000" pointer-events="all"/>
-        <g transform="translate(-0.5 -0.5)">
-            <switch>
-                <foreignObject style="overflow: visible; text-align: left;" pointer-events="none" width="100%" height="100%" requiredFeatures="http://www.w3.org/TR/SVG11/feature#Extensibility">
-                    <div xmlns="http://www.w3.org/1999/xhtml" style="display: flex; align-items: unsafe center; justify-content: unsafe center; width: 1px; height: 1px; padding-top: 10px; margin-left: 364px;">
-                        <div style="box-sizing: border-box; font-size: 0; text-align: center; ">
-                            <div style="display: inline-block; font-size: 12px; font-family: Helvetica; color: #000000; line-height: 1.2; pointer-events: all; white-space: nowrap; ">
-                                <b>
-                                    Note: this diagram currently does not show what the client does, but how I think it should work.
-                                </b>
-                            </div>
-                        </div>
-                    </div>
-                </foreignObject>
-                <text x="364" y="14" fill="#000000" font-family="Helvetica" font-size="12px" text-anchor="middle">
-                    Note: this diagram currently does not show what the client does, but how I think it should wo...
-                </text>
-            </switch>
-        </g>
-        <path d="M 29 146 L 29 120 L 329 120 L 329 146" fill="#f5f5f5" stroke="#171717" stroke-miterlimit="10" pointer-events="all"/>
-        <path d="M 29 146 L 29 510 L 329 510 L 329 146" fill="none" stroke="#171717" stroke-miterlimit="10" pointer-events="none"/>
-        <path d="M 29 146 L 329 146" fill="none" stroke="#171717" stroke-miterlimit="10" pointer-events="none"/>
-        <g fill="#0D0D0D" font-family="Helvetica" font-weight="bold" text-anchor="middle" font-size="12px">
-            <text x="178.5" y="137.5">
-                Record: KernelInformationProfile
+        <path d="M 339 192 L 393.3 192 L 393.3 273.5 L 447.5 273.48" fill="none" stroke="#000000" stroke-miterlimit="10" pointer-events="stroke"/>
+        <path d="M 39 75 L 39 49 L 339 49 L 339 75" fill="#ffffff" stroke="#000000" stroke-miterlimit="10" pointer-events="all"/>
+        <path d="M 39 75 L 39 465 L 339 465 L 339 75" fill="none" stroke="#000000" stroke-miterlimit="10" pointer-events="none"/>
+        <path d="M 39 75 L 339 75" fill="none" stroke="#000000" stroke-miterlimit="10" pointer-events="none"/>
+        <g fill="#000000" font-family="Helvetica" font-weight="bold" text-anchor="middle" font-size="12px">
+            <text x="188.5" y="66.5">
+                Record: Testbed4inf-Profile
             </text>
         </g>
-        <rect x="29" y="146" width="300" height="26" fill="#f5f5f5" stroke="#171717" pointer-events="none"/>
-        <g fill="#0D0D0D" font-family="Helvetica" clip-path="url(#mx-clip-33-151-292-26-0)" font-size="12px">
-            <text x="34.5" y="163.5">
-                kernelProfileInformation: PID
+        <g fill="#000000" font-family="Helvetica" clip-path="url(#mx-clip-43-80-292-26-0)" font-size="12px">
+            <text x="44.5" y="92.5">
+                profile: PID
             </text>
         </g>
-        <rect x="29" y="172" width="300" height="26" fill="#f5f5f5" stroke="#171717" pointer-events="none"/>
-        <g fill="#0D0D0D" font-family="Helvetica" clip-path="url(#mx-clip-33-177-292-26-0)" font-size="12px">
-            <text x="34.5" y="189.5">
-                digitalObjectType: {"pid-IANA-IMAGE": "tiff"}
+        <g fill="#000000" font-family="Helvetica" clip-path="url(#mx-clip-43-106-292-26-0)" font-size="12px">
+            <text x="44.5" y="118.5">
+                datatype: genericObjectType (PID or mimetype string)
             </text>
         </g>
-        <rect x="29" y="198" width="300" height="26" fill="#f5f5f5" stroke="#171717" pointer-events="none"/>
-        <g fill="#0D0D0D" font-family="Helvetica" clip-path="url(#mx-clip-33-203-292-26-0)" font-size="12px">
-            <text x="34.5" y="215.5">
-                digitalObjectLocation: URL
+        <g fill="#000000" font-family="Helvetica" clip-path="url(#mx-clip-43-132-292-26-0)" font-size="12px">
+            <text x="44.5" y="144.5">
+                objectURL: URL
             </text>
         </g>
-        <rect x="29" y="224" width="300" height="26" fill="#f5f5f5" stroke="#171717" pointer-events="none"/>
-        <g fill="#0D0D0D" font-family="Helvetica" clip-path="url(#mx-clip-33-229-292-26-0)" font-size="12px">
-            <text x="34.5" y="241.5">
-                digitalObjectPolicy: Handle
+        <g fill="#000000" font-family="Helvetica" clip-path="url(#mx-clip-43-158-292-26-0)" font-size="12px">
+            <text x="44.5" y="170.5">
+                policy: Pid
             </text>
         </g>
-        <rect x="29" y="250" width="300" height="26" fill="#f5f5f5" stroke="#171717" pointer-events="none"/>
-        <g fill="#0D0D0D" font-family="Helvetica" clip-path="url(#mx-clip-33-255-292-26-0)" font-size="12px">
-            <text x="34.5" y="267.5">
-                etag: { "pid-checksum" : {"sha256sum": "value"} }
+        <g fill="#000000" font-family="Helvetica" clip-path="url(#mx-clip-43-184-292-26-0)" font-size="12px">
+            <text x="44.5" y="196.5">
+                etag: Checksum
             </text>
         </g>
-        <rect x="29" y="276" width="300" height="26" fill="#f5f5f5" stroke="#171717" pointer-events="none"/>
-        <g fill="#0D0D0D" font-family="Helvetica" clip-path="url(#mx-clip-33-281-292-26-0)" font-size="12px">
-            <text x="34.5" y="293.5">
+        <g fill="#000000" font-family="Helvetica" clip-path="url(#mx-clip-43-210-292-26-0)" font-size="12px">
+            <text x="44.5" y="222.5">
                 dateModified: String
             </text>
         </g>
-        <rect x="29" y="302" width="300" height="26" fill="#f5f5f5" stroke="#171717" pointer-events="none"/>
-        <g fill="#0D0D0D" font-family="Helvetica" clip-path="url(#mx-clip-33-307-292-26-0)" font-size="12px">
-            <text x="34.5" y="319.5">
+        <g fill="#000000" font-family="Helvetica" clip-path="url(#mx-clip-43-236-292-26-0)" font-size="12px">
+            <text x="44.5" y="248.5">
                 dateCreated: String
             </text>
         </g>
-        <rect x="29" y="328" width="300" height="26" fill="#f5f5f5" stroke="#171717" pointer-events="none"/>
-        <g fill="#0D0D0D" font-family="Helvetica" clip-path="url(#mx-clip-33-333-292-26-0)" font-size="12px">
-            <text x="34.5" y="345.5">
+        <g fill="#000000" font-family="Helvetica" clip-path="url(#mx-clip-43-262-292-26-0)" font-size="12px">
+            <text x="44.5" y="274.5">
                 version: String
             </text>
         </g>
-        <rect x="29" y="354" width="300" height="26" fill="#f5f5f5" stroke="#171717" pointer-events="none"/>
-        <g fill="#0D0D0D" font-family="Helvetica" clip-path="url(#mx-clip-33-359-292-26-0)" font-size="12px">
-            <text x="34.5" y="371.5">
+        <g fill="#000000" font-family="Helvetica" clip-path="url(#mx-clip-43-288-292-26-0)" font-size="12px">
+            <text x="44.5" y="300.5">
+                Metadata: metadataLinkObject
+            </text>
+        </g>
+        <g fill="#000000" font-family="Helvetica" clip-path="url(#mx-clip-43-314-292-26-0)" font-size="12px">
+            <text x="44.5" y="326.5">
                 wasDerivedFrom: PID
             </text>
         </g>
-        <rect x="29" y="380" width="300" height="26" fill="#f5f5f5" stroke="#171717" pointer-events="none"/>
-        <g fill="#0D0D0D" font-family="Helvetica" clip-path="url(#mx-clip-33-385-292-26-0)" font-size="12px">
-            <text x="34.5" y="397.5">
+        <g fill="#000000" font-family="Helvetica" clip-path="url(#mx-clip-43-340-292-26-0)" font-size="12px">
+            <text x="44.5" y="352.5">
                 specializationOf: PID
             </text>
         </g>
-        <rect x="29" y="406" width="300" height="26" fill="#f5f5f5" stroke="#171717" pointer-events="none"/>
-        <g fill="#0D0D0D" font-family="Helvetica" clip-path="url(#mx-clip-33-411-292-26-0)" font-size="12px">
-            <text x="34.5" y="423.5">
+        <g fill="#000000" font-family="Helvetica" clip-path="url(#mx-clip-43-366-292-26-0)" font-size="12px">
+            <text x="44.5" y="378.5">
                 wasRevisionOf: PID
             </text>
         </g>
-        <rect x="29" y="432" width="300" height="26" fill="#f5f5f5" stroke="#171717" pointer-events="none"/>
-        <g fill="#0D0D0D" font-family="Helvetica" clip-path="url(#mx-clip-33-437-292-26-0)" font-size="12px">
-            <text x="34.5" y="449.5">
+        <g fill="#000000" font-family="Helvetica" clip-path="url(#mx-clip-43-392-292-26-0)" font-size="12px">
+            <text x="44.5" y="404.5">
                 hadPrimarySource: PID
             </text>
         </g>
-        <rect x="29" y="458" width="300" height="26" fill="#f5f5f5" stroke="#171717" pointer-events="none"/>
-        <g fill="#0D0D0D" font-family="Helvetica" clip-path="url(#mx-clip-33-463-292-26-0)" font-size="12px">
-            <text x="34.5" y="475.5">
+        <g fill="#000000" font-family="Helvetica" clip-path="url(#mx-clip-43-418-292-26-0)" font-size="12px">
+            <text x="44.5" y="430.5">
                 wasQuotedFrom: PID
             </text>
         </g>
-        <rect x="29" y="484" width="300" height="26" fill="#f5f5f5" stroke="#171717" pointer-events="none"/>
-        <g fill="#0D0D0D" font-family="Helvetica" clip-path="url(#mx-clip-33-489-292-26-0)" font-size="12px">
-            <text x="34.5" y="501.5">
+        <g fill="#000000" font-family="Helvetica" clip-path="url(#mx-clip-43-444-292-26-0)" font-size="12px">
+            <text x="44.5" y="456.5">
                 alternateOf: PID
             </text>
         </g>
-        <path d="M 429 250 L 429 224 L 699 224 L 699 250" fill="#ffffff" stroke="#171717" stroke-miterlimit="10" pointer-events="none"/>
-        <path d="M 429 250 L 429 328 L 699 328 L 699 250" fill="none" stroke="#171717" stroke-miterlimit="10" pointer-events="none"/>
-        <path d="M 429 250 L 699 250" fill="none" stroke="#171717" stroke-miterlimit="10" pointer-events="none"/>
+        <path d="M 339 296 L 393 296 L 393 327.3 L 447 327.32" fill="none" stroke="#000000" stroke-miterlimit="10" pointer-events="none"/>
+        <rect x="-80" y="170" width="200" height="20" fill="#ffffff" stroke="#000000" transform="rotate(-90,20,180)" pointer-events="none"/>
+        <g transform="translate(-0.5 -0.5)rotate(-90 20 180)">
+            <switch>
+                <foreignObject style="overflow: visible; text-align: left;" pointer-events="none" width="100%" height="100%" requiredFeatures="http://www.w3.org/TR/SVG11/feature#Extensibility">
+                    <div xmlns="http://www.w3.org/1999/xhtml" style="display: flex; align-items: unsafe center; justify-content: unsafe center; width: 198px; height: 1px; padding-top: 180px; margin-left: -79px;">
+                        <div style="box-sizing: border-box; font-size: 0; text-align: center; ">
+                            <div style="display: inline-block; font-size: 12px; font-family: Helvetica; color: #000000; line-height: 1.2; pointer-events: none; white-space: normal; word-wrap: normal; ">
+                                Mandatory
+                            </div>
+                        </div>
+                    </div>
+                </foreignObject>
+                <text x="20" y="184" fill="#000000" font-family="Helvetica" font-size="12px" text-anchor="middle">
+                    Mandatory
+                </text>
+            </switch>
+        </g>
+        <rect x="-67.5" y="362.5" width="175" height="20" fill="#ffffff" stroke="#000000" transform="rotate(-90,20,372.5)" pointer-events="none"/>
+        <g transform="translate(-0.5 -0.5)rotate(-90 20 372.5)">
+            <switch>
+                <foreignObject style="overflow: visible; text-align: left;" pointer-events="none" width="100%" height="100%" requiredFeatures="http://www.w3.org/TR/SVG11/feature#Extensibility">
+                    <div xmlns="http://www.w3.org/1999/xhtml" style="display: flex; align-items: unsafe center; justify-content: unsafe center; width: 173px; height: 1px; padding-top: 373px; margin-left: -66px;">
+                        <div style="box-sizing: border-box; font-size: 0; text-align: center; ">
+                            <div style="display: inline-block; font-size: 12px; font-family: Helvetica; color: #000000; line-height: 1.2; pointer-events: none; white-space: normal; word-wrap: normal; ">
+                                optional
+                            </div>
+                        </div>
+                    </div>
+                </foreignObject>
+                <text x="20" y="376" fill="#000000" font-family="Helvetica" font-size="12px" text-anchor="middle">
+                    optional
+                </text>
+            </switch>
+        </g>
+        <rect x="115.75" y="375.75" width="146.5" height="20" fill="#ffffff" stroke="#000000" transform="rotate(-90,189,385.75)" pointer-events="none"/>
+        <g transform="translate(-0.5 -0.5)rotate(-90 189 385.75)">
+            <switch>
+                <foreignObject style="overflow: visible; text-align: left;" pointer-events="none" width="100%" height="100%" requiredFeatures="http://www.w3.org/TR/SVG11/feature#Extensibility">
+                    <div xmlns="http://www.w3.org/1999/xhtml" style="display: flex; align-items: unsafe center; justify-content: unsafe center; width: 145px; height: 1px; padding-top: 386px; margin-left: 117px;">
+                        <div style="box-sizing: border-box; font-size: 0; text-align: center; ">
+                            <div style="display: inline-block; font-size: 12px; font-family: Helvetica; color: #000000; line-height: 1.2; pointer-events: none; white-space: normal; word-wrap: normal; ">
+                                unimplemented
+                            </div>
+                        </div>
+                    </div>
+                </foreignObject>
+                <text x="189" y="389" fill="#000000" font-family="Helvetica" font-size="12px" text-anchor="middle">
+                    unimplemented
+                </text>
+            </switch>
+        </g>
+        <path d="M 447 171 L 447 145 L 709 145 L 709 171" fill="#ffffff" stroke="#000000" stroke-miterlimit="10" pointer-events="none"/>
+        <path d="M 447 171 L 447 249 L 709 249 L 709 171" fill="none" stroke="#000000" stroke-miterlimit="10" pointer-events="none"/>
+        <path d="M 447 171 L 709 171" fill="none" stroke="#000000" stroke-miterlimit="10" pointer-events="none"/>
         <g fill="#000000" font-family="Helvetica" text-anchor="middle" font-size="12px">
-            <text x="563.5" y="241.5">
-                Classname
+            <text x="577.5" y="162.5">
+                Policy
             </text>
         </g>
-        <rect x="429" y="250" width="270" height="26" fill="#ffffff" stroke="none" pointer-events="none"/>
-        <g fill="#000000" font-family="Helvetica" clip-path="url(#mx-clip-433-255-262-26-0)" font-size="12px">
-            <text x="434.5" y="267.5">
+        <g fill="#000000" font-family="Helvetica" clip-path="url(#mx-clip-451-176-254-26-0)" font-size="12px">
+            <text x="452.5" y="188.5">
                 objectLifeCycleType: String/enum
             </text>
         </g>
-        <rect x="429" y="276" width="270" height="26" fill="#ffffff" stroke="none" pointer-events="none"/>
-        <g fill="#000000" font-family="Helvetica" clip-path="url(#mx-clip-433-281-262-26-0)" font-size="12px">
-            <text x="434.5" y="293.5">
+        <g fill="#000000" font-family="Helvetica" clip-path="url(#mx-clip-451-202-254-26-0)" font-size="12px">
+            <text x="452.5" y="214.5">
                 objectTombstoneInformation: String, Optional
             </text>
         </g>
-        <rect x="429" y="302" width="270" height="26" fill="#ffffff" stroke="none" pointer-events="none"/>
-        <g fill="#000000" font-family="Helvetica" clip-path="url(#mx-clip-433-307-262-26-0)" font-size="12px">
-            <text x="434.5" y="319.5">
+        <g fill="#000000" font-family="Helvetica" clip-path="url(#mx-clip-451-228-254-26-0)" font-size="12px">
+            <text x="452.5" y="240.5">
                 objectLicense: PID/URL
             </text>
         </g>
-        <path d="M 0 310.55 L 11.11 310.55 L 14.5 300.45 L 17.89 310.55 L 29 310.55 L 20.15 317.32 L 23.66 328 L 14.5 321.39 L 5.34 328 L 8.85 317.32 Z" fill="#ffcccc" stroke="#000000" stroke-miterlimit="10" pointer-events="none"/>
-        <path d="M 0 260.1 L 11.11 260.1 L 14.5 250 L 17.89 260.1 L 29 260.1 L 20.15 266.87 L 23.66 277.55 L 14.5 270.94 L 5.34 277.55 L 8.85 266.87 Z" fill="#ffcccc" stroke="#000000" stroke-miterlimit="10" pointer-events="none"/>
-        <path d="M 0 234.1 L 11.11 234.1 L 14.5 224 L 17.89 234.1 L 29 234.1 L 20.15 240.87 L 23.66 251.55 L 14.5 244.94 L 5.34 251.55 L 8.85 240.87 Z" fill="#ffcccc" stroke="#000000" stroke-miterlimit="10" pointer-events="none"/>
-        <path d="M 0 206.55 L 11.11 206.55 L 14.5 196.45 L 17.89 206.55 L 29 206.55 L 20.15 213.32 L 23.66 224 L 14.5 217.39 L 5.34 224 L 8.85 213.32 Z" fill="#ffcccc" stroke="#000000" stroke-miterlimit="10" pointer-events="none"/>
-        <path d="M 0 182 L 11.11 182 L 14.5 171.9 L 17.89 182 L 29 182 L 20.15 188.77 L 23.66 199.45 L 14.5 192.84 L 5.34 199.45 L 8.85 188.77 Z" fill="#ffcccc" stroke="#000000" stroke-miterlimit="10" pointer-events="none"/>
-        <path d="M 0 154.45 L 11.11 154.45 L 14.5 144.35 L 17.89 154.45 L 29 154.45 L 20.15 161.22 L 23.66 171.9 L 14.5 165.29 L 5.34 171.9 L 8.85 161.22 Z" fill="#ffcccc" stroke="#000000" stroke-miterlimit="10" pointer-events="none"/>
+        <path d="M 447 327.32 L 447 301.32 L 710 301.32 L 710 327.32" fill="#ffffff" stroke="#000000" stroke-miterlimit="10" pointer-events="none"/>
+        <path d="M 447 327.32 L 447 405.32 L 710 405.32 L 710 327.32" fill="none" stroke="#000000" stroke-miterlimit="10" pointer-events="none"/>
+        <path d="M 447 327.32 L 710 327.32" fill="none" stroke="#000000" stroke-miterlimit="10" pointer-events="none"/>
+        <g fill="#000000" font-family="Helvetica" text-anchor="middle" font-size="12px">
+            <text x="578" y="318.82">
+                metadataLinkObject
+            </text>
+        </g>
+        <g fill="#000000" font-family="Helvetica" clip-path="url(#mx-clip-451-332-255-26-0)" font-size="12px">
+            <text x="452.5" y="344.82">
+                + relation: Relation
+            </text>
+        </g>
+        <g fill="#000000" font-family="Helvetica" clip-path="url(#mx-clip-451-358-255-26-0)" font-size="12px">
+            <text x="452.5" y="370.82">
+                + reference: resource-reference
+            </text>
+        </g>
+        <g fill="#000000" font-family="Helvetica" clip-path="url(#mx-clip-451-384-255-26-0)" font-size="12px">
+            <text x="452.5" y="396.82">
+                opt. typehint: genericObjectType
+            </text>
+        </g>
     </g>
     <switch>
         <g requiredFeatures="http://www.w3.org/TR/SVG11/feature#Extensibility"/>

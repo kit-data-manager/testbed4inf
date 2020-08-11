@@ -2,22 +2,14 @@
 
 Datatype: Image file (i.e. image/tiff)
 
-Metadata type: PageAnnotation+XML
+Metadata type: application/json+ld, Annotation Ontology.
 
 # Ingest: Record creation
 
-> Assumption: The image file and the metadata xml file are already available at the fictive URLs https://imag.es/image.tiff and https://page.anno/annotation.xml.
+> Assumption: The image file and the metadata files are already available under some certain URLs. There are multiple metadata files.
 
-> Note: Every Attribute of the profile is in practice represented by a pid, not a string.  The attibute names here are just for readability. A pid is a unique string.
-> 
-> An attributes pid represents a type and is unique within one profile. The type defines what the value may be, that can be assigned to an attribute. According to the [PID KernelInformation Recommendations][recommendations], a value should be indivisible, similar to primitive types in programming languages.
-> 
-> Syntax is: `attribute: possible Value Type(s)`
+In the case of an annotated image, there must be two FDOs registered. One for the image itself, and one for the metadata. The image FDO has to point to the metadata, and the metadata object may have additional metdadata information attached. In the case of the annotation metadata, there is no further object referenced. Instead, it points to IRIs which are defining the semantic context and ontology. For all objects, the same profile is used. There is no enforcement to attach semantic context and ontology to the metadata. To define more strict assumptions, there would in practice be the need for a lot of profiles, which is not [recommented](recommendations). The following figure demonstrates the details of how metadata and data are connected.
 
-![](images/dtr_attributes.drawio.svg)
+![](images/connecting_metadata.drawio.svg)
 
-This is how a profile looks like:
-
-![](images/pageannotation_record.drawio.svg)
-
-[recommendations]: TODO
+[recommendations]: https://www.doi.org/10.15497/A5BCD108-ECC4-41BE-91A7-20112FF77458
