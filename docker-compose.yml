@@ -26,6 +26,8 @@ services:
   messagebroker:
     image: rabbitmq:3
     container_name: messagebroker
+    ports:
+      - "5672:5672"
 
   database:
     build: ./postgres
@@ -40,6 +42,8 @@ services:
       interval: 10s
       timeout: 5s
       retries: 15
+    ports:
+      - "5432:5432"
 
   elasticsearch:
     image: elasticsearch:7.8.1
