@@ -24,10 +24,11 @@ services:
       - "8080:80"
 
   messagebroker:
-    image: rabbitmq:3
+    image: rabbitmq:3-management
     container_name: messagebroker
     ports:
       - "5672:5672"
+      - "15672:15672"
 
   database:
     build: ./postgres
