@@ -1,5 +1,15 @@
 version: '3'
 services:
+  indexer:
+    build:
+      context: .
+      dockerfile: ./indexer/Dockerfile
+      args:
+        - SSH_PRIVATE_KEY
+    container_name: indexer
+    depends_on:
+      - messagebroker
+
   pit-service:
     build:
       context: . # without this context, the dockerfile can not access the java-release-run.sh and similar files.
