@@ -4,7 +4,7 @@ services:
   collectionapi:
     image: kitdm/collection-api
     ports:
-     - "8091:8080"
+      - "8091:8080"
 
   indexer:
     build:
