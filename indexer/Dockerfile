@@ -48,5 +48,6 @@ RUN mkdir -p /kitdm20/config
 COPY --from=build-indexer /kitdm20/indexer.jar /kitdm20/
 COPY --from=build-indexer /kitdm20/service/src/main/resources/mytemplate.hbs /kitdm20/
 COPY indexer/conf/application.properties /kitdm20/config/application.properties
+COPY java-release-run.sh /kitdm20/
 EXPOSE 8080
-CMD java -jar /kitdm20/indexer.jar
+CMD bash /kitdm20/java-release-run.sh indexer.jar
