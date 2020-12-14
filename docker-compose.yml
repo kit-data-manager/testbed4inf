@@ -10,8 +10,6 @@ services:
     build:
       context: .
       dockerfile: ./indexer/Dockerfile
-      args:
-        - SSH_PRIVATE_KEY
     container_name: indexer
     depends_on:
       - messagebroker
@@ -20,8 +18,6 @@ services:
     build:
       context: . # without this context, the dockerfile can not access the java-release-run.sh and similar files.
       dockerfile: ./pit-service/Dockerfile
-      args:
-        - SSH_PRIVATE_KEY #=${SSH_PRIVATE_KEY}
     container_name: pit-service
     ports: 
       - "8090:8080"
@@ -33,8 +29,6 @@ services:
     build:
       context: . # without this context, the dockerfile can not access the java-release-run.sh and similar files.
       dockerfile: ./fairris/Dockerfile
-      args:
-        - SSH_PRIVATE_KEY #=${SSH_PRIVATE_KEY}
     container_name: fairris
     ports: 
       - "8080:80"
