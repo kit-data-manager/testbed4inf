@@ -12,7 +12,7 @@ FROM build-env-java as build-pit
 LABEL maintainer="pfeil@kit.edu"
 LABEL stage=build-contains-credentials
 RUN cd /kitdm20/ && \
-    git clone -v https://github.com/Pfeil/pit-service.git service && \
+    git clone -v https://github.com/kit-data-manager/pit-service.git service && \
     cd service && \
     ./gradlew -Pclean-release build --stacktrace && \
     cp build/libs/pit-service.jar ../
