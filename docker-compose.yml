@@ -22,7 +22,6 @@ services:
     ports: 
       - "8090:8080"
     depends_on:
-      - database
       - messagebroker
   
   fairris:
@@ -40,21 +39,21 @@ services:
       - "5672:5672"
       - "15672:15672"
 
-  database:
-    build: ./postgres
-    container_name: database
-    environment:
-        - PGPASSWORD=docker
-        - POSTGRES_USER=docker
-        - POSTGRES_PASSWORD=docker
-        - POSTGRES_DB=kitdm20
-    healthcheck:
-      test: ["CMD-SHELL", "pg_isready -U docker -d kitdm20"]
-      interval: 10s
-      timeout: 5s
-      retries: 15
-    ports:
-      - "5432:5432"
+  #database:
+  #  build: ./postgres
+  #  container_name: database
+  #  environment:
+  #      - PGPASSWORD=docker
+  #      - POSTGRES_USER=docker
+  #      - POSTGRES_PASSWORD=docker
+  #      - POSTGRES_DB=kitdm20
+  #  healthcheck:
+  #    test: ["CMD-SHELL", "pg_isready -U docker -d kitdm20"]
+  #    interval: 10s
+  #    timeout: 5s
+  #    retries: 15
+  #  ports:
+  #    - "5432:5432"
 
   elasticsearch:
     image: elasticsearch:7.8.1
