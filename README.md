@@ -24,9 +24,11 @@ docker-compose up  # start all services of the testbed
 Wait until the containers are started. After that, you may expore the possibilities of the testbed using the following URLs:
 
 - [Fairris Web Interface: http://localhost:8080/](http://localhost:8080/)
-    - A simple web interface for simplified experimentation purposes. You can register simplified but valid records and get a feeling for the tasks FAIR enabled research software needs to do in the background.
+    - A simple web interface for simplified testbed experimentation purposes. You can register simplified but valid records and get a feeling for the tasks FAIR enabled research software needs to do in the background. It is meant to exist in the testbed only. It tries to mimic a hypothetical, specialized interface for researchers.
 - [PIT-Service API Documentation: http://localhost:8090/swagger-ui.html](http://localhost:8090/swagger-ui.html)
     - Use this API to manage PID records. You can find [details about the PIT-Service here](https://github.com/kit-data-manager/pit-service).
+- [Search Index Management UI: http://localhost:5601/app/kibana](http://localhost:5601/app/kibana)
+    - Use this interface to create a view on the record index and create queries. There are also APIs available directly to the elasticsearch index, which enables developers to create different kinds of search experiences.
 - [Collection Service API Documentation: http://localhost:8091/swagger-ui.html](http://localhost:8091/swagger-ui.html)
     - Use this API to manage collections. You can find [details about the collection service here](https://github.com/kit-data-manager/collection-api).
 - [Collection Service Content Map: http://localhost:8091/static/overview.html](http://localhost:8091/static/overview.html)
