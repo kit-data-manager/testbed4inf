@@ -27,6 +27,8 @@ Wait until the containers are started. After that, you may expore the possibilit
     - A simple web interface for simplified testbed experimentation purposes. You can register simplified but valid records and get a feeling for the tasks FAIR enabled research software needs to do in the background. It is meant to exist in the testbed only. It tries to mimic a hypothetical, specialized interface for researchers.
 - [PIT-Service API Documentation: http://localhost:8090/swagger-ui.html](http://localhost:8090/swagger-ui.html)
     - Use this API to manage PID records. You can find [details about the PIT-Service here](https://github.com/kit-data-manager/pit-service).
+- [Message Broker Management UI](http://localhost:15672/#/)
+    - The message broker will receive messages from the PIT service when records are created or updated. The broker will persist those messages in the queues of interested (registered) clients. In the testbed is currently only one such client: The indexer, which will receive the messages, resolve the record and finally ingest all information into the seach index. This interface will let you watch into internal statistics and the internal state of the broker.
 - [Search Index Management UI: http://localhost:5601/app/kibana](http://localhost:5601/app/kibana)
     - Use this interface to create a view on the record index and create queries. There are also APIs available directly to the elasticsearch index, which enables developers to create different kinds of search experiences.
 - [Collection Service API Documentation: http://localhost:8091/swagger-ui.html](http://localhost:8091/swagger-ui.html)
