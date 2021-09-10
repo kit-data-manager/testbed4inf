@@ -2,6 +2,8 @@
 
 Testbed for FAIR DO infrastructure.
 
+[![Test Build](https://github.com/kit-data-manager/testbed4inf/actions/workflows/main.yml/badge.svg)](https://github.com/kit-data-manager/testbed4inf/actions/workflows/main.yml)
+
 ## Goals
 
 This testbed is meant to be used as ...
