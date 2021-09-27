@@ -1,6 +1,8 @@
 name: Docker image build
 
 on:
+  schedule:
+    - cron: '42 0 1 * *'  # Mondays, 00:42 UTC
   push:
     branches: [ master ]
   pull_request:
