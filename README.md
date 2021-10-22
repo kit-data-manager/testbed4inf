@@ -1,8 +1,18 @@
 # testbed4inf
 
-Testbed for FAIR DO infrastructure.
 
 [![Test Build](https://github.com/kit-data-manager/testbed4inf/actions/workflows/main.yml/badge.svg)](https://github.com/kit-data-manager/testbed4inf/actions/workflows/main.yml)
+
+Testbed for a generic FAIR DO infrastructure. Current functionalities:
+
+- Create, Update and Retrieve PIDs
+- Search within PID records
+- Notification of PID activities for other services
+- Includes an instance of our collection registry to create and manage collections
+
+Related Publications:
+
+- [Poster from RDA VP17 Poster Session](https://www.doi.org/10.5445/IR/1000131613)
 
 ## Goals
 
