@@ -25,12 +25,10 @@ This testbed is meant to be used as ...
 ## Getting Started
 
 ```bash
-# install docker and docker-compose first.
+# install docker first.
 git clone $THIS_REPOSITORY_URL
 cd testbed4inf
-
-bash build.sh  # build all services which do not have an image on docker hub
-docker-compose up  # start all services of the testbed
+docker compose up  # start all services of the testbed
 ```
 
 Wait until the containers are started. After that, you may expore the possibilities of the testbed using the following URLs:
@@ -48,28 +46,20 @@ Wait until the containers are started. After that, you may expore the possibilit
 - [Collection Service Content Map: http://localhost:8091/static/overview.html](http://localhost:8091/static/overview.html)
     - If you registered Collections using the API, you can get an overview of the registered collections using this interface.
 
-## Advanced usage instructions
+## Customization
 
 Detailed usage documentation beyond the short "getting started" introduction.
 
-The testbed consists of several services, managed with docker-compose. Some of them do not yet have an image on docker hub. To build the images for those services, use the build script like this:
+The testbed consists of several services, managed with docker-compose. Some of them do not yet have an image on docker hub and need to be built on the machine. This will happen automatically when starting them.
 
-```bash
-# build all services
-bash build.sh
-# build only the services "fairris" and "pit-service"
-bash build.sh fairris pit-service
-```
-
-Use `docker-compose up` to start all services or `docker-compose up fairris pit-service` to only start a selection, analogous to the build steps.
+Use `docker compose up` to start all services or `docker compose up fairris pit-service` to only start a selection, analogous to the build steps.
 
 ### Update services
 
 ```bash
 git pull
-docker-compose down  # shut down all services and delete its containers
-docker-compose pull  # pull new image versions
-bash build.sh        # build service images which are not directly provided (yet)
+docker compose down  # shut down all services and delete its containers
+docker compose pull  # pull new image versions
 docker-compose up    # starts all services
 ```
 
@@ -77,7 +67,6 @@ docker-compose up    # starts all services
 
 - The `documentation` folder contains advanced documentation about the testbed and some workflows within it for some better understanding of the architecture.
 - Service-specific files are in folders named after the service. The configurations inside the folders are used either at build time or container creation time. So if you want to change the configuration, you need to make sure to execute the corresponding action afterwards, in order to use the new configurations.
-- `build.sh` is a convenience script to simplify using the docker-compose build command.
 - `docker-compose.yml` contains all services and how they are wired together.
     - It is recommended to use override files to make custom modifications. It will make pulling new versions of the repository easier for you.
     - Use the compose file as a documentation of exposed ports etc.
