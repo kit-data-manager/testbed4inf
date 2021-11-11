@@ -23,4 +23,4 @@ jobs:
       - uses: actions/checkout@v2
 
       - name: Build images that are not available on docker hub
-        run: bash build.sh
+        run: docker compose build
