@@ -24,6 +24,8 @@ This testbed is meant to be used as ...
 
 ## Getting Started
 
+> IMPORTANT: Before you start, make sure your docker environment has at least 4GB of memory (RAM) available. This is especially required if it runs in a virtual machine (which is the case e.g. if you use OSX). You can do this the easiest using Docker Desktop in the preference menu under "Resources". The testbed consists of several services, and in sum the default of 2GB RAM will not be enough.
+
 ```bash
 # install docker first.
 git clone $THIS_REPOSITORY_URL
