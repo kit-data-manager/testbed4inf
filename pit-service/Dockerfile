@@ -12,19 +12,19 @@ FROM build-env-java as build-pit
 LABEL maintainer="pfeil@kit.edu"
 LABEL stage=build-contains-credentials
 RUN cd /kitdm20/ && \
-    git clone -v https://github.com/kit-data-manager/pit-service.git service && \
+    git clone -v https://github.com/kit-data-manager/pit-service.git --branch master service && \
     cd service && \
     ./gradlew build --stacktrace && \
-    cp build/libs/pit-service*.jar ../
+    cp build/libs/TypedPIDMaker*.jar ../
 
 
-# Clean image
+# Create a clean, minimal image
 FROM openjdk:11-buster as run-pit
 LABEL maintainer="pfeil@kit.edu"
 LABEL stage=run
 RUN mkdir -p /kitdm20/config
 COPY java-release-run.sh /kitdm20/
-COPY --from=build-pit /kitdm20/pit-service*.jar /kitdm20/pit-service.jar
+COPY --from=build-pit /kitdm20/TypedPIDMaker*.jar /kitdm20/TypedPIDMaker.jar
 COPY pit-service/conf/application.properties /kitdm20/config/application.properties
 EXPOSE 8080
-CMD bash /kitdm20/java-release-run.sh pit-service.jar
+CMD bash /kitdm20/java-release-run.sh TypedPIDMaker.jar
