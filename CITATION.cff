@@ -1,0 +1,15 @@
+cff-version: 1.2.0
+message: "If you use this software, please cite it as below."
+authors:
+- family-names: "Pfeil"
+  given-names: "Andreas"
+  affiliation: Karlsruhe Institute of Technology
+  email: andreas.pfeil@kit.edu
+  orcid: "https://orcid.org/0000-0001-6575-1022"
+title: "FAIR Digital Object Ecosystem Testbed"
+type: software
+abstract: The testbed is an easy to use, dockerized and freely configurable FAIR DO infrastructure. The goal is to demonstrate the principles, to detect gaps and problems in specifications and finally to be a production-ready template.
+date-released: 2020-10-01
+url: "https://github.com/kit-data-manager/testbed4inf"
+repository-code: "https://github.com/kit-data-manager/testbed4inf"
+license: Apache-2.0
