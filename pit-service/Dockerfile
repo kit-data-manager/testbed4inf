@@ -1,4 +1,4 @@
-FROM openjdk:11-buster AS build-env-java
+FROM openjdk:17-bullseye AS build-env-java
 LABEL maintainer="pfeil@kit.edu"
 LABEL stage=build-env
 RUN apt-get update && \
@@ -19,7 +19,7 @@ RUN cd /kitdm20/ && \
 
 
 # Create a clean, minimal image
-FROM openjdk:11-buster as run-pit
+FROM openjdk:17-bullseye as run-pit
 LABEL maintainer="pfeil@kit.edu"
 LABEL stage=run
 RUN mkdir -p /kitdm20/config
