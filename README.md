@@ -62,7 +62,7 @@ Use `docker compose up` to start all services or `docker compose up fairris pit-
 git pull
 docker compose down  # shut down all services and delete its containers
 docker compose pull  # pull new image versions
-docker-compose up    # starts all services
+docker compose up    # starts all services
 ```
 
 ## Repository structure
