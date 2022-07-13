@@ -1,9 +1,13 @@
-# testbed4inf
+# FAIR Digital Object Ecosystem Testbed
 
 
 [![Test Build](https://github.com/kit-data-manager/testbed4inf/actions/workflows/main.yml/badge.svg)](https://github.com/kit-data-manager/testbed4inf/actions/workflows/main.yml)
 
-Testbed for a generic FAIR DO infrastructure. Current functionalities:
+A testbed for a generic FAIR DO infrastructure.
+
+> **The testbed resulted in the development of the [FAIR DO Lab](https://github.com/kit-data-manager/FAIR-DO-Lab). All further development will take place there, with the new goal of developing a production-ready software stack.**
+
+Current functionalities:
 
 - Create, Update and Retrieve PIDs
 - Search within PID records
